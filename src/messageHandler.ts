@@ -17,14 +17,18 @@ export async function onDropperEject(jsonMsg) {
     }
 }
 
-//"[系統] 您收到了 User 轉帳的 18 綠寶石 (目前擁有 10 綠寶石)"
 //onUserPay
 export async function onUserPay(jsonMsg) {
     const message = jsonMsg.toString()
     if (isValidPaymentMessage(message)) {
         const user = message.split(" ")[2]
         const base = Number(message.split(" ")[4].replaceAll(",", ""))
-        queuePush(user, base)
+        if (base > Number(process.env.moneyLimit)) {
+            sentPrivateMessage(getBot(), user, "Money limit exceeded! If you believe it's an error, contact instance owner")
+            pushPaymentQueue(user, base, PaymentActions.Refund)
+        }
+        else
+            queuePush(user, base)
     }
 }
 

@@ -25,7 +25,7 @@ bot.on("spawn", async () => {
         throw "redstone_wire isn't in nearby(make sure bot is in the right position)"
 
     logMessage(getBot(), "Running in debug mode", true)
-    sentChatMessage(getBot(), `Initialized (LibreFalloutBot) ${getBot().findBlock({ matching: bot.registry.blocksByName["redstone_wire"].id, maxDistance: 10, count: 1 }).position}`)
+    sentChatMessage(getBot(), `Initialized (LibreFalloutBot is lisenced under GNU AGPL-3.0-or-later)`)
     logMessage(getBot(), "Redstone wire detected at " + getBot().findBlock({ matching: bot.registry.blocksByName["redstone_wire"].id, maxDistance: 10, count: 1 }).position, true)
 })
 

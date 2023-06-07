@@ -52,6 +52,8 @@ LibreFalloutBot 是一個開放原始碼的機器人，試圖打破廢土伺服�
 
 ## Environment variables
 
+以下皆為必填，除非明確指出
+
 `email = "string"` Microsoft帳號
 
 `queueLimitPerUser = int` 限制玩家之 request pending 的數目
@@ -68,9 +70,11 @@ LibreFalloutBot 是一個開放原始碼的機器人，試圖打破廢土伺服�
 
 `queueSkipLimit = int` 可容忍多少次開獎等待(小於)
 
-`password = "string"` 請使得密碼足夠強壯，注意請勿使用真正的密碼
+`moneyLimit = int` 金錢上限，超過將會推進 Payment queue 然後退錢
 
-`webhookURL = "string"` Discord webhook URL
+`password = "string"` 請使得密碼足夠強壯，注意請勿使用真正的密碼，僅為產生交易識別碼用
+
+`webhookURL = "string"` Discord webhook URL (可留空)
 
 ## Credits
 
