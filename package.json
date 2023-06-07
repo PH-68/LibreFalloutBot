@@ -6,6 +6,7 @@
   },
   "private": true,
   "devDependencies": {
-    "javascript-obfuscator": "^4.0.2"
+    "javascript-obfuscator": "^4.0.2",
+    "typescript": "^5.1.3"
   }
 }
