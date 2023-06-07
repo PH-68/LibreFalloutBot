@@ -27,16 +27,6 @@ bot.on("spawn", async () => {
     logMessage(getBot(), "Running in debug mode", true)
     sentChatMessage(getBot(), `Initialized (LibreFalloutBot) ${getBot().findBlock({ matching: bot.registry.blocksByName["redstone_wire"].id, maxDistance: 10, count: 1 }).position}`)
     logMessage(getBot(), "Redstone wire detected at " + getBot().findBlock({ matching: bot.registry.blocksByName["redstone_wire"].id, maxDistance: 10, count: 1 }).position, true)
-    queuePush("PH68", 100)
-    queuePush("PH68", 100)
-    queuePush("PH68", 100)
-    queuePush("PH68", 100)
-    queuePush("PH68", 100)
-    queuePush("PH68", 100)
-    queuePush("PH68", 100)
-    queuePush("PH68", 100)
-    queuePush("PH68", 100)
-    queuePush("PH68", 100)
 })
 
 function registerMessageListener(bot) {
