@@ -75,7 +75,7 @@ bot._client.on('packet', function (packet) {
 });
 
 
-//"[系統] 您收到了 LuYao_ 轉帳的 18 綠寶石 (目前擁有 10 綠寶石)"
+//"[系統] 您收到了 User 轉帳的 18 綠寶石 (目前擁有 10 綠寶石)"
 bot.on('message', async (jsonMsg, position) => {
     const message = jsonMsg.toString()
     if (message.indexOf("[系統]") == 0 && message.indexOf("轉帳") != -1 && message.indexOf("收到") != -1) {
