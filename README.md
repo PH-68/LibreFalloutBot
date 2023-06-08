@@ -46,7 +46,7 @@ LibreFalloutBot 是一個開放原始碼的機器人，試圖打破廢土伺服�
 
  1. 需蓋好一包含紅石粉末以及投擲器之機台(須記下投擲器之座標)
 
- 2. 命名物品，種類隨意，需固定格式為 `中獎 賠率 取代我為int or float賠率` 或 `未中獎 賠率 取代我為int or float賠率` 並放入機台
+ 2. 命名物品，種類隨意，需固定格式為 `中獎 賠率 取代為int or float賠率` 或 `未中獎 賠率 取代為int or float賠率` 並放入機台
 
  3. 創造於與執行檔同目錄下並調整 `.env` 設定檔內容以符合現實，使用環境變數也可以(詳見下方)
 
@@ -77,6 +77,28 @@ LibreFalloutBot 是一個開放原始碼的機器人，試圖打破廢土伺服�
 `password = "string"` 請使得密碼足夠強壯，注意請勿使用真正的密碼，僅為產生交易識別碼用
 
 `webhookURL = "string"` Discord webhook URL (可留空)
+
+## FAQ
+
+Q: 投擲器機率為多少
+
+A: 可自行 decompile `DispenserBlockEntity.java` 得知為 
+
+
+| $\frac{1}{1!}$ | $\frac{1}{2!}$ | $\frac{1}{3!}$ |
+| :---: | :---: | :---: |
+| $\frac{1}{4!}$ | $\frac{1}{5!}$ | $\frac{1}{6!}$ |
+| $\frac{1}{7!}$ | $\frac{1}{8!}$ | $\frac{1}{9!}$ |
+
+Q: Paper 對於 Random Number Generator 的調整
+
+A: [Refer to this patch](https://github.com/PaperMC/Paper/blob/master/patches/server/0074-Use-a-Shared-Random-for-Entities.patch) 全分流共用一個 Seed
+
+Q: How good is java.util.Random?
+
+A: [How good is java.util.Random? - StackOverflow](https://stackoverflow.com/questions/453479/how-good-is-java-util-random)
+
+考慮 java.util.Random 並不是 cryptographically secure 故 java.util.Random 的輸出是可以被預測的，但自從 Paper 對 RNG 的調整，這幾乎不可能
 
 ## Credits
 
