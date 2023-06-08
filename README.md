@@ -36,6 +36,8 @@ LibreFalloutBot 是一個開放原始碼的機器人，試圖打破廢土伺服�
 
 需先有 Node.js(18.16.0 LTS 是推薦的) 而後 `git clone`
 
+`npm ci`
+
 接著 `npx tsc --outDir ./dist`
 
 `npx pkg --compress Gzip -t (node18-linux-x64|node18-macos-x64|node18-win-x64) --out-path ./dist ./dist/bot.js` 是選用的，為了產生 exe
@@ -44,7 +46,7 @@ LibreFalloutBot 是一個開放原始碼的機器人，試圖打破廢土伺服�
 
 ## Usage
 
- 1. 需蓋好一包含紅石粉末以及投擲器之機台(須記下投擲器之座標)
+ 1. 需蓋好一包含紅石粉末以及投擲器之機台(須記下投擲器及紅石之座標)
 
  2. 命名物品，種類隨意，需固定格式為 `中獎 賠率 取代為int or float賠率` 或 `未中獎 賠率 取代為int or float賠率` 並放入機台
 
