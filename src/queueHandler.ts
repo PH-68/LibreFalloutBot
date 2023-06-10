@@ -1,6 +1,6 @@
 import { getBot } from "./bot";
 import { logMessage, sentPrivateMessage } from "./messageHandler";
-import { PaymentActions, pushPaymentQueue } from "./paymentQueueHandler";
+import { PaymentActions, logTransaction, pushPaymentQueue } from "./paymentQueueHandler";
 
 let queue: Array<[string, number]> = [], lock = false, queueCountPerUser = {}, queueSkipCount = 0;
 
@@ -33,6 +33,8 @@ export function queuePush(user: string, base: number) {
         sentPrivateMessage(getBot(), user, "&cUser queue limit exceeded. Further request would nither refund nor be pushed into the queue.")
     }
     else {
+        const currentDateString = new Date(new Date().setHours(new Date().getHours() + 8)).toJSON().slice(0, -5) + "GMT+8";
+        logTransaction(user, base, PaymentActions.Received, currentDateString)
         queue.push([user, base])
         queueCountPerUser[user]++
     }

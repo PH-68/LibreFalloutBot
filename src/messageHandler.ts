@@ -24,7 +24,7 @@ export async function onUserPay(jsonMsg) {
         const user = message.split(" ")[2]
         const base = Number(message.split(" ")[4].replaceAll(",", ""))
         if (base > Number(process.env.moneyLimit)) {
-            sentPrivateMessage(getBot(), user, "Money limit exceeded! If you believe it's an error, contact instance owner")
+            sentPrivateMessage(getBot(), user, "Money limit exceeded! If you believe it's an error, contact instance owner. Refunding...")
             pushPaymentQueue(user, base, PaymentActions.Refund)
         }
         else

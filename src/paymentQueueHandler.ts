@@ -37,12 +37,10 @@ export function pushPaymentQueue(user: string, amountOfMoney: number, actionType
     }
 }
 
-function logTransaction(user: string, amountOfMoney: number, actionType: string, currentDateString: string) {
-
+export function logTransaction(user: string, amountOfMoney: number, actionType: string, currentDateString: string) {
     fs.appendFile('./transactionLog.csv', `${currentDateString},${getRandomString(currentDateString, 3)},${user},${amountOfMoney},${getKeyName(actionType)}\n`, function (err) {
         if (err) throw err;
     });
-    //console.log(`${currentDateString},${getRandomString(currentDateString, 3)},${user},${amountOfMoney},${actionType}`)
 }
 
 function getRandomString(salt, length) {
@@ -56,5 +54,6 @@ function getKeyName(value: string) {
 export enum PaymentActions {
     Refund = "Refund",
     Lose = "未中獎",
-    Win = "中獎"
+    Win = "中獎",
+    Received = "收到"
 }

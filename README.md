@@ -10,7 +10,7 @@ LibreFalloutBot 是一個開放原始碼的機器人，試圖打破廢土伺服�
 
 - 使用 OAuth 登入，僅儲存 token 於本機，而母需明文儲存帳號密碼於文字檔，故可開啟 2FA，相對安全
 
-- 尊重隱私，無遙測資料回傳(Telemetry)和ads
+- 隱私始於設計(Privacy by design)，無遙測資料回傳(Telemetry)和ads
 
 - 動態(浮動?跳動?)賠率，賠率是被發射器噴出之命名決定
 
