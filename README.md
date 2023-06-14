@@ -2,7 +2,9 @@
 
 LibreFalloutBot 是一個開放原始碼的機器人，試圖打破廢土伺服器中的付費牆。為一個PoC嘗試驗證對賭bot所需之技術困難度，PR和Issue是歡迎的。
 
-⚠️注意:目前僅實作綠對賭，賭村之後果不被保證
+⚠️注意: 目前僅實作綠對賭，賭村之後果不被保證
+
+⚠️注意: 請詳閱下方免責聲明
 
 ## Features
 
@@ -111,3 +113,17 @@ This work is licensed under GNU AGPL-3.0-or-later
 考慮請杯咖啡吧，你的綠很寶貴，我的時間也同樣寶貴
 
 Discord: F3C7#0255
+
+# Disclaimer of Warranty
+
+THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY
+APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT
+HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM "AS IS" WITHOUT
+WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND
+PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE
+DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR
+CORRECTION.
+
+在適用法律允許的範圍內，對該程式沒有任何保證。除非另有書面說明，否則版權持有人和/或其他各方 "按原樣 "提供該程式，不提供任何明示或暗示的保證，包括但不限於對適銷性和特定用途的適用性的暗示保證。關於程式的品質和性能的全部風險由您承擔。如果該程式被證明有缺陷，您將承擔所有必要的服務、修理或糾正的費用。(Unoffical translation)
