@@ -31,7 +31,24 @@ jobs:
     - run: npx tsc --outDir ./dist
     - run: npx pkg --compress Gzip --out-path ./dist ./dist/bot.js
     
+    - name: Generate Hashes
+    - uses: MCJack123/ghaction-generate-release-hashes@v3
+      with:
+          hash-type: sha512
+          file-name: ./dist/hashes.txt
+          
+    - name: Zip file and calculate hash 
+    - run: |
+           zip -r release ./dist
+           echo "ZipHash=$(sha512sum release.zip)" >> $GITHUB_OUTPUT
+    
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3.1.2
       with:
-        path: ./dist
+        path: release.zip
+        
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      if: startsWith(github.ref, 'refs/tags/')
+      with:
+        body: ${{ github.ZipHash }}--sha512
