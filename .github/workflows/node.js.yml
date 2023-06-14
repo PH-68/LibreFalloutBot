@@ -47,3 +47,4 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         body: ${{ github.ZipHash }}--sha512
+        tag_name: ${{ steps.vars.outputs.sha_short }}
