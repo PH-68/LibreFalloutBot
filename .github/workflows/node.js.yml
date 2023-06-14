@@ -27,9 +27,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm ci
-    - run: npx tsc --outDir ./dist
-    - run: npx pkg --compress Gzip --out-path ./dist ./dist/bot.js
+    - name: Build
+      run: |
+         npm ci
+         npx tsc --outDir ./dist
+         npx pkg --compress Gzip --out-path ./dist ./dist/bot.js
     
     - name: Generate Hashes
     - uses: MCJack123/ghaction-generate-release-hashes@v3
@@ -38,7 +40,7 @@ jobs:
           file-name: ./dist/hashes.txt
           
     - name: Zip file and calculate hash 
-    - run: |
+      run: |
            zip -r release ./dist
            echo "ZipHash=$(sha512sum release.zip)" >> $GITHUB_OUTPUT
     
