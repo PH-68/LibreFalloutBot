@@ -32,12 +32,6 @@ jobs:
          npm ci
          npx tsc --outDir ./dist
          npx pkg --compress Gzip --out-path ./dist ./dist/bot.js
-    
-    - name: Generate Hashes
-      uses: MCJack123/ghaction-generate-release-hashes@v3
-      with:
-          hash-type: sha512
-          file-name: ./dist/hashes.txt
           
     - name: Zip file and calculate hash 
       run: |
