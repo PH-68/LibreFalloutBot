@@ -112,7 +112,7 @@ This work is licensed under GNU AGPL-3.0-or-later
 
 考慮請杯咖啡吧，你的綠很寶貴，我的時間也同樣寶貴
 
-Discord: F3C7#0255
+Discord: f3c7
 
 # Disclaimer of Warranty
 
