@@ -49,7 +49,7 @@ jobs:
     - name: Release
       uses: softprops/action-gh-release@v1
       with:
-        body: ${{ env.ZipHash--sha512
+        body: ${{ env.ZipHash--sha512 }}
         files: artifact.zip
         token: ${{ secrets.RELEASE_PAT }}
         tag_name: Build_${{ env.TagName }}
