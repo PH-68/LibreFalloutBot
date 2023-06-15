@@ -49,8 +49,8 @@ jobs:
     - name: Release
       uses: softprops/action-gh-release@v1
       with:
-        body: ${{ github.ZipHash }}--sha512
+        body: ${{ env.ZipHash--sha512
         files: artifact.zip
         token: ${{ secrets.RELEASE_PAT }}
-        tag_name: Build_${{ github.TagName }}
+        tag_name: Build_${{ env.TagName }}
         prerelease: true
