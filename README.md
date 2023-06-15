@@ -28,15 +28,15 @@ LibreFalloutBot 是一個開放原始碼的機器人，試圖打破廢土伺服�
 
 ### Use pre-built binaries
 
-可以下載 Github release 之 binaries 或是 Github action 之 artifacts
+可以下載 [Github release](https://github.com/PH-68/LibreFalloutBot/releases) 之 binaries 或是 [Github actions](https://github.com/PH-68/LibreFalloutBot/actions) 之 artifacts
 
-若為 `.js` 之檔案則需 Node.js(18.16.0 LTS 是推薦的)
+若為 `.js` 之檔案則需 Node.js(18.x	LTS 是推薦的)
 
 ⚠️驗證 sha-512 和 GPG Key 是被鼓勵的
 
 ### Self Building
 
-需先有 Node.js(18.16.0 LTS 是推薦的) 而後 `git clone`
+需先有 Node.js(18.x	LTS 是推薦的) 而後 `git clone`
 
 接著 `npx tsc --outDir ./dist`
 
@@ -46,7 +46,7 @@ LibreFalloutBot 是一個開放原始碼的機器人，試圖打破廢土伺服�
 
 ## Usage
 
- 1. 需蓋好一包含紅石粉末以及投擲器之機台(須記下投擲器之座標)
+ 1. 需蓋好一包含紅石粉末以及投擲器之機台(須記下投擲器和紅石粉末之座標)
 
  2. 命名物品，種類隨意，需固定格式為 `中獎 賠率 取代為int or float賠率` 或 `未中獎 賠率 取代為int or float賠率` 並放入機台
 
