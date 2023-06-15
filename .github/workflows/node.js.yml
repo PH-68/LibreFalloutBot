@@ -35,18 +35,22 @@ jobs:
           
     - name: Zip file and calculate hash 
       run: |
-           zip -r release ./dist
-           echo "ZipHash=$(sha512sum release.zip)" >> $GITHUB_OUTPUT
+           zip -r artifact ./dist
+           echo "ZipHash=$(sha512sum artifact.zip)" >> $GITHUB_OUTPUT
     
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3.1.2
       with:
         path: release.zip
         
+    - name: Get tag name
+      run: echo "TagName=$(date +"%Y.%m.%d_%H-%M")" >> $GITHUB_OUTPUT
+        
     - name: Release
       uses: softprops/action-gh-release@v1
       with:
         body: ${{ github.ZipHash }}--sha512
+        files: artifact.zip
         token: ${{ secrets.RELEASE_PAT }}
-        tag_name: Build_$(date +"%Y.%m.%d_%H-%M")
+        tag_name: Build_${{ github.TagName }}
         prerelease: true
