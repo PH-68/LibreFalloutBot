@@ -47,6 +47,6 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         body: ${{ github.ZipHash }}--sha512
-        token: ${{ github.RELEASE_PAT }}
+        token: ${{ secrets.RELEASE_PAT }}
         tag_name: Build_$(date +"%Y.%m.%d_%H-%M")
         prerelease: true
