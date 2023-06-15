@@ -1,12 +1,11 @@
 {
   "dependencies": {
     "dotenv": "^16.1.4",
-    "mineflayer": "^4.8.1",
+    "mineflayer": "^4.9.0",
     "pkg": "^5.8.1"
   },
   "private": true,
   "devDependencies": {
-    "javascript-obfuscator": "^4.0.2",
     "typescript": "^5.1.3"
   }
 }
