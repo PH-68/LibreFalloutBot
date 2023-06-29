@@ -30,7 +30,7 @@ export function queuePush(user: string, base: number) {
     queueCountPerUser[user] = queueCountPerUser[user] == undefined ? 1 : queueCountPerUser[user]
     if (queueCountPerUser[user] > Number(process.env.queueLimitPerUser)) {
         logMessage(getBot(), `${user} Queue limit exceeded`, false)
-        sentPrivateMessage(getBot(), user, "&cUser queue limit exceeded. Further request would nither refund nor be pushed into the queue.")
+        sentPrivateMessage(getBot(), user, "&cUser queue limit exceeded. Further request would nither refund nor enqueue.")
     }
     else {
         const currentDateString = new Date(new Date().setHours(new Date().getHours() + 8)).toJSON().slice(0, -5) + "GMT+8";
