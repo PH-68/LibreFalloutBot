@@ -678,7 +678,7 @@ minecraft-folder-path@^1.2.0:
   resolved "https://registry.yarnpkg.com/minecraft-folder-path/-/minecraft-folder-path-1.2.0.tgz#08ea450bfb20dbb02cf6e1470864e2f0d652e477"
   integrity sha512-qaUSbKWoOsH9brn0JQuBhxNAzTDMwrOXorwuRxdJKKKDYvZhtml+6GVCUrY5HRiEsieBEjCUnhVpDuQiKsiFaw==
 
-minecraft-protocol@^1.43.1:
+minecraft-protocol@^1.44.0:
   version "1.44.0"
   resolved "https://registry.yarnpkg.com/minecraft-protocol/-/minecraft-protocol-1.44.0.tgz#ad930bd0340db9005204aa666d54f2638ce33394"
   integrity sha512-sYu4fFzUKt3spPG5tAdkaB9sNQPT0sV6fyS0sS7/nxdzFfjmLhF6BLNC+32ieK4/MhgNyHtH6xusD0Bi0Roq9w==
@@ -702,24 +702,24 @@ minecraft-protocol@^1.43.1:
     uuid-1345 "^1.0.1"
     yggdrasil "^1.4.0"
 
-mineflayer@4.10.1:
-  version "4.10.1"
-  resolved "https://registry.yarnpkg.com/mineflayer/-/mineflayer-4.10.1.tgz#da3c31ee9f30d4d35de121915f3ee65d51543bd8"
-  integrity sha512-Ixvovd5wtx7ZYzm5YCqgOVoMqTam0LEEMwfOQGQ7Y3AAPk8Ci1rXOZZDdJmn9XRnloRRR8jv2MjQW2kFl7LyQg==
+mineflayer@4.11.0:
+  version "4.11.0"
+  resolved "https://registry.yarnpkg.com/mineflayer/-/mineflayer-4.11.0.tgz#fb056e73627d68b0acddcecedafeb789b7b6ad24"
+  integrity sha512-LFCpvqEcjvVG5U7SpkZybaT0h41yR9W9IWm/QTHM5VBn2VDGsB40zyyZpTOiOI4F57DoOxypGy8048jq5k4u2Q==
   dependencies:
     minecraft-data "^3.37.0"
-    minecraft-protocol "^1.43.1"
+    minecraft-protocol "^1.44.0"
     prismarine-biome "^1.1.1"
     prismarine-block "^1.17.0"
     prismarine-chat "^1.7.1"
     prismarine-chunk "^1.34.0"
     prismarine-entity "^2.2.0"
-    prismarine-item "^1.12.1"
+    prismarine-item "^1.14.0"
     prismarine-nbt "^2.0.0"
     prismarine-physics "^1.7.0"
     prismarine-recipe "^1.3.0"
     prismarine-registry "^1.5.0"
-    prismarine-windows "^2.5.0"
+    prismarine-windows "^2.8.0"
     prismarine-world "^3.6.0"
     protodef "^1.14.0"
     typed-emitter "^1.0.0"
@@ -945,7 +945,7 @@ prismarine-entity@^2.2.0:
     prismarine-registry "^1.4.0"
     vec3 "^0.1.4"
 
-prismarine-item@^1.10.0, prismarine-item@^1.10.1, prismarine-item@^1.11.2, prismarine-item@^1.12.1, prismarine-item@^1.12.2:
+prismarine-item@^1.10.0, prismarine-item@^1.10.1, prismarine-item@^1.11.2, prismarine-item@^1.12.2, prismarine-item@^1.14.0:
   version "1.14.0"
   resolved "https://registry.yarnpkg.com/prismarine-item/-/prismarine-item-1.14.0.tgz#e79da9921e101fda08ca435e1b1cf73c04d8e03c"
   integrity sha512-udQHYGJ05klFe8Kkc0TOmwoXj5Xl1ZPgHVoMbGUAFB9exN4TFxEa1A39vkSYhxP5Et9PNufQQvFBFVom0nXikA==
@@ -990,7 +990,7 @@ prismarine-registry@^1.1.0, prismarine-registry@^1.4.0, prismarine-registry@^1.5
     minecraft-data "^3.0.0"
     prismarine-nbt "^2.0.0"
 
-prismarine-windows@^2.5.0:
+prismarine-windows@^2.8.0:
   version "2.8.0"
   resolved "https://registry.yarnpkg.com/prismarine-windows/-/prismarine-windows-2.8.0.tgz#a22c963b67125a011392b870ef1167206a635631"
   integrity sha512-9HVhJ8tfCeRubYwQzgz8oiHNAebMJ5hDdjm45PZwrOgewaislnR2HDsbPMWiCcyWkYL7J8bVLVoSzEzv5pH98g==
