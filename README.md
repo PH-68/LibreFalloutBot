@@ -40,7 +40,7 @@ LibreFalloutBot 是一個開放原始碼的機器人，試圖打破廢土伺服�
 
 接著 `yarn` (prefered) or `npm i`
 
-`npx tsc --outDir ./dist`
+`npx tsc --outDir ./dist` 編譯 typescript
 
 `npx pkg --compress Gzip -t (node18-linux-x64|node18-macos-x64|node18-win-x64) --out-path ./dist ./dist/bot.js` 是選用的，為了產生 exe
 
@@ -60,27 +60,19 @@ LibreFalloutBot 是一個開放原始碼的機器人，試圖打破廢土伺服�
 
 以下皆為必填，除非明確指出
 
-`email = "string"` Microsoft帳號
-
-`queueLimitPerUser = int` 限制玩家之 request pending 的數目
-
-`debug = bool` 除錯模式(紀錄詳細資訊)
-
-`dropperPosition = "int int int"` 投擲器座標(注意格式須完全一致，不可缺少或省略空白等)
-
-`redstonePosition = "(int, int, int)"` 紅石粉座標(注意格式須完全一致，不可缺少或省略空白等)
-
-`queueInterval = int` 多少毫秒開一次獎
-
-`paymentQueueInterval = int` 多少毫秒Pay一次
-
-`queueSkipLimit = int` 可容忍多少次開獎等待(小於)
-
-`moneyLimit = int` 金錢上限，超過將會推進 Payment queue 然後退錢
-
-`password = "string"` 請使得密語足夠強壯，注意請勿使用真正的密碼，僅為加密產生交易識別碼用
-
-`webhookURL = "string"` Discord webhook URL (可留空)
+| key                  | value             |                                                                      |
+|----------------------|-------------------|----------------------------------------------------------------------|
+| email                | "string"          | Microsoft 帳號                                                       |
+| queueLimitPerUser    | int               | 限制玩家之 request pending 的數目                                    |
+| debug                | bool              | 除錯模式(紀錄詳細資訊)                                               |
+| dropperPosition      | "int int int"     | 投擲器座標(注意格式須完全一致，不可缺少或省略空白等)                 |
+| redstonePosition     | "(int, int, int)" | 紅石粉座標(注意格式須完全一致，不可缺少或省略空白等)                 |
+| queueInterval        | int               | 多少毫秒開一次獎                                                     |
+| paymentQueueInterval | int               | 多少毫秒Pay一次                                                      |
+| queueSkipLimit       | int               | 可容忍多少次開獎等待(小於)                                           |
+| moneyLimit           | int               | 金錢上限，超過將會推進 Payment queue 然後退錢                        |
+| password             | "string"          | 請使得密語足夠強壯，注意請勿使用真正的密碼，僅為加密產生交易識別碼用 |
+| webhookURL           | "string"          | Discord webhook URL (可留空)                                         |
 
 ## FAQ
 
