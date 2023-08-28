@@ -86,7 +86,7 @@ LibreFalloutBot 是一個開放原始碼的機器人，試圖打破廢土伺服�
 
 Q: 投擲器機率為多少
 
-A: 可自行 decompile `DispenserBlockEntity.java` 得知為 $\frac{1}{n}$ ，考慮 n 為不為空的 slot
+A: 可自行 decompile `DispenserBlockEntity.java` 得知為 $\frac{1}{n}$ ，考慮 $n$ 為不為空之 slot
 
 Q: Paper 對於 Random Number Generator 的調整
 
