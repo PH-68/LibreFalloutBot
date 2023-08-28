@@ -128,4 +128,4 @@ PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE
 DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR
 CORRECTION.
 
-在適用法律允許的範圍內，對該程式沒有任何保證。除非另有書面說明，否則版權持有人和/或其他各方 "按原樣 "提供該程式，不提供任何明示或暗示的保證，包括但不限於對適銷性和特定用途的適用性的暗示保證。關於程式的品質和性能的全部風險由您承擔。如果該程式被證明有缺陷，您將承擔所有必要的服務、修理或糾正的費用。(Unoffical translation)
+在適用法律允許的範圍內，對該程式沒有任何保證。除非另有書面說明，否則版權持有人和/或其他各方 "按原樣 "提供該程式，不提供任何明示或暗示的保證，包括但不限於對適銷性和特定用途的適用性的暗示保證。關於程式的品質和性能的全部風險由您承擔。如果該程式被證明有缺陷，您將承擔所有必要的服務、修理或糾正的費用。
