@@ -72,7 +72,7 @@ function postWebhookMessage(message: string) {
 }
 
 function isValidDropperMessage(message: string) {
-    return message.indexOf("[區域]") == 0 && !message.includes("<") && !message.includes(">") && message.includes("中獎 賠率")
+    return message.indexOf("[區域]") == 0 && !message.includes("<") && !message.includes(">") && message.includes("中獎 倍率")
 }
 
 function isValidBlockPosition(message: string) {
