@@ -38,4 +38,16 @@ export function getBot() {
     return bot;
 }
 
+bot.on('end', console.log)
 bot.on('error', console.log)
+
+process.on('uncaughtException', UncaughtExceptionHandler);
+
+function UncaughtExceptionHandler(err)
+{
+    console.log("Uncaught Exception");
+    console.log("err: ", err);
+    console.log("Stack trace: ", err.stack);
+    setInterval(function(){}, 1000);
+    getBot().quit()
+}
