@@ -66,7 +66,7 @@ export function sentCommand(bot, message: string) {
 }
 
 function postWebhookMessage(message: string) {
-    if ((process.env.webhookURL != "") || (process.env.webhookURL != undefined)) {
+    if ((process.env.webhookURL != "") && (process.env.webhookURL != undefined)) {
         fetch(process.env.webhookURL!, {
             method: "POST", headers: { "Content-Type": "application/json", }, body: JSON.stringify({ "content": message })
         })
