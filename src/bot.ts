@@ -1,13 +1,12 @@
 import { logMessage, onDropperEject, onInsufficientBalance, onUserPay, sentChatMessage } from "./messageHandler";
 import { registerPaymentTimer } from "./paymentQueueHandler";
-import { queuePush } from "./queueHandler";
 import { checkQueue } from "./queueHandler";
 
 var mineflayer = require('mineflayer');
 require('dotenv').config();
 
 const botOptions = {
-    host: "mcfallout.net",
+    host: ((process.env.host == undefined) || (process.env.host == "")) ? "mcfallout.net" : process.env.host,
     port: 25565,
     username: process.env.email,
     auth: 'microsoft',
@@ -34,7 +33,6 @@ function registerMessageListener(bot) {
     bot.on('message', onUserPay)
     bot.on('message', onInsufficientBalance)
 }
-
 
 export function getBot() {
     return bot;

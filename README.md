@@ -73,6 +73,7 @@ LibreFalloutBot 是一個開放原始碼(FOSS)的機器人，試圖打破廢土�
 | moneyLimit           | int               | 金錢上限，超過將會推進 Payment queue 然後退錢                        |
 | password             | "string"          | 請使得密語足夠強壯，注意請勿使用真正的密碼，僅為加密產生交易識別碼用 |
 | webhookURL           | "string"          | Discord webhook URL (可留空)                                         |
+| host                 | "string"          | 廢土伺服器連線位置，若留空則預設 `mcfallout.net`                       |
 
 ## FAQ
 
