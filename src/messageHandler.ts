@@ -66,9 +66,11 @@ export function sentCommand(bot, message: string) {
 }
 
 function postWebhookMessage(message: string) {
-    fetch(process.env.webhookURL!, {
-        method: "POST", headers: { "Content-Type": "application/json", }, body: JSON.stringify({ "content": message })
-    })
+    if ((process.env.webhookURL != "") || (process.env.webhookURL != undefined)) {
+        fetch(process.env.webhookURL!, {
+            method: "POST", headers: { "Content-Type": "application/json", }, body: JSON.stringify({ "content": message })
+        })
+    }
 }
 
 function isValidDropperMessage(message: string) {
