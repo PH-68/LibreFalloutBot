@@ -702,10 +702,10 @@ minecraft-protocol@^1.44.0:
     uuid-1345 "^1.0.1"
     yggdrasil "^1.4.0"
 
-mineflayer@4.14.0:
-  version "4.14.0"
-  resolved "https://registry.yarnpkg.com/mineflayer/-/mineflayer-4.14.0.tgz#47f6ef1780944289a33091511b1d890de94e653d"
-  integrity sha512-4EYzUmZNxH3Gpz3GkgO2eaR90ANb50nVhMCU2y6Rl1Ru8M6HqxID1Eg7tRgsodfAOD+AKh5SPwmPnISLcxvnOA==
+mineflayer@4.17.0:
+  version "4.17.0"
+  resolved "https://registry.yarnpkg.com/mineflayer/-/mineflayer-4.17.0.tgz#df116fee12908e47fb4d08896532152188aaa39e"
+  integrity sha512-Bu5vwv3rhVjyMV8jtR/i+2SmJHXPdfUAIHQ2JBCwY/w+dpjsIu+gW97l+zBz365HraRO0i+kKb3xxSluAHp7hQ==
   dependencies:
     minecraft-data "^3.44.0"
     minecraft-protocol "^1.44.0"
