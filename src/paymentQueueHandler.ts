@@ -1,5 +1,5 @@
 import { getBot } from "./bot";
-import { sentChatMessage, sentCommand } from "./messageHandler";
+import { sentChatMessage, execCommand } from "./messageHandler";
 
 import * as crypto from "crypto";
 const fs = require('fs');
@@ -14,15 +14,11 @@ function makeTransaction(bot, user: string, amountOfMoney: number, actionType: s
         sentChatMessage(bot, `[${currentDateString}] &6${user} &cTransaction failed(number is NaN)`)
         return false
     }
-    sentCommand(bot, `/pay ${user} ${amountOfMoney}`)
+    execCommand(bot, `/pay ${user} ${amountOfMoney}`)
     return [currentDateString, getRandomString(currentDateString, 3)]
 }
 
-export function registerPaymentTimer(duration: number) {
-    setInterval(checkPaymentQueue, duration)
-}
-
-function checkPaymentQueue() {
+export function checkPaymentQueue() {
     if (queue.length != 0) {
         const userInfo = queue.shift()!
         makeTransaction(getBot(), userInfo[0], userInfo[1], userInfo[2], userInfo[3])

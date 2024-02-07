@@ -60,7 +60,7 @@ export function sentChatMessage(bot, message: string) {
     bot.chat(`${message}`)
     postWebhookMessage(`[Chat] ${message}`)
 }
-export function sentCommand(bot, message: string) {
+export function execCommand(bot, message: string) {
     bot.chat(`${message}`)
     postWebhookMessage(`[Command] ${message}`)
 }

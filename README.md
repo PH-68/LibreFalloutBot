@@ -63,17 +63,18 @@ LibreFalloutBot 是一個開放原始碼(FOSS)的機器人，試圖打破廢土�
 | key                  | value             |                                                                      |
 |----------------------|-------------------|----------------------------------------------------------------------|
 | email                | "string"          | Microsoft 帳號                                                       |
-| queueLimitPerUser    | int               | 限制玩家之 request pending 的數目                                    |
-| debug                | bool              | 除錯模式(紀錄詳細資訊)                                               |
-| dropperPosition      | "int int int"     | 投擲器座標(注意格式須完全一致，不可缺少或省略空白等)                 |
-| redstonePosition     | "(int, int, int)" | 紅石粉座標(注意格式須完全一致，不可缺少或省略空白等)                 |
-| queueInterval        | int               | 多少毫秒開一次獎                                                     |
-| paymentQueueInterval | int               | 多少毫秒Pay一次                                                      |
-| queueSkipLimit       | int               | 可容忍多少次開獎等待(小於)                                           |
-| moneyLimit           | int               | 金錢上限，超過將會推進 Payment queue 然後退錢                        |
-| password             | "string"          | 請使得密語足夠強壯，注意請勿使用真正的密碼，僅為加密產生交易識別碼用 |
-| webhookURL           | "string"          | Discord webhook URL (可留空)                                         |
-| host                 | "string"          | 廢土伺服器連線位置，若留空則預設 `mcfallout.net`                       |
+| queueLimitPerUser    | int               | 限制玩家之 request pending 的數目                                     |
+| debug                | bool              | 除錯模式(紀錄詳細資訊)                                                 |
+| dropperPosition      | "int int int"     | 投擲器座標(注意格式須完全一致，不可缺少或省略空白等)                      |
+| redstonePosition     | "(int, int, int)" | 紅石粉座標(注意格式須完全一致，不可缺少或省略空白等)                      |
+| queueInterval        | int               | 多少毫秒開一次獎                                                       |
+| paymentQueueInterval | int               | 多少毫秒Pay一次(deprecated,棄用)                                       |
+| queueSkipLimit       | int               | 可容忍多少次開獎等待(小於)                                              |
+| moneyLimit           | int               | 金錢上限，超過將會推進 Payment queue 然後退錢                           |
+| password             | "string"          | 請使得密語足夠強壯，注意請勿使用真正的密碼，僅為加密產生交易識別碼用        |
+| webhookURL           | "string"          | Discord webhook URL (可留空)                                          |
+| host                 | "string"          | 廢土伺服器連線位置，若留空則預設 `mcfallout.net`                         |
+| PreCommand           | "string"          | 啟動前執行指令                                                         |
 
 ## FAQ
 
