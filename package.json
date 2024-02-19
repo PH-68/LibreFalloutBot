@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "dotenv": "16.4.1",
+    "dotenv": "16.4.4",
     "mineflayer": "4.18.0",
     "pkg": "5.8.1"
   },
